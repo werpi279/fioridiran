@@ -1,0 +1,187 @@
+:root {
+    color-scheme: only light;
+}
+
+html {
+    margin: 0;
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    background-color: black;
+    color: white;
+    min-height: 100vh;
+}
+
+h1 {
+    font-weight: 1200;
+    font-size: 48px;
+    margin: 0 0 2.5% 0;
+    padding: 0;
+}
+
+h2 {
+    padding: 0;
+    margin: 0;
+    font-weight: 800;
+    font-size: 24px;
+    line-height: 1.5;
+}
+
+h3 {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.5;
+    text-align: left;
+    font-family: 'Roboto Mono';
+}
+
+button {
+    margin-top: 10%;
+    margin-bottom: 10%;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;   
+    padding: 10px;
+    border-radius: 0%;
+    background-color: white;
+    font-family: 'Roboto Mono';
+    border: 2pt solid black;
+}
+
+button:hover, button:active{
+    background-color: black;
+    color: white;
+    border: 2pt solid white;
+}
+
+button::after{
+    background-color: white;
+    color: black;
+    border: 2pt solid black;
+}
+
+p,
+a,
+sub,
+i {
+    padding: 0;
+    margin: 2.5vh 0 0 0;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+h3 i {
+    font-size: 12px;
+}
+
+a {
+    font-size: 12px;
+    color: white;    
+}
+
+h1::selection,
+h2::selection,
+h3::selection,
+p::selection,
+a::selection,
+sub::selection,
+i::selection {
+    color: black;
+    background: white;
+}
+
+main {
+    width: 60%;
+    /*set this later*/
+    margin-left: 20%;
+    margin-top: 10%;
+    display: flex;
+    /*justify-content: center;*/
+}
+
+.normal {
+    font-family: 'Roboto';
+}
+
+.mono {
+    font-family: 'Roboto Mono';
+}
+
+header {
+    margin: 2% 0 0 2%;
+    
+    position: fixed;
+    top: 0;
+}
+
+footer {
+    margin: 0 0 2% 2%;
+    
+    position: fixed;
+    bottom: 0;
+}
+
+#w279 {
+    text-align: right;
+}
+
+/*==================================================
+====================================================
+====================================================
+
+-------------- Responsive tablet -----------------
+
+====================================================
+====================================================
+==================================================*/
+
+@media only screen and (max-width: 1025px) {
+
+    main {
+        width: 80%;
+        /*set this later*/
+        margin-left: 10%;
+    }
+
+    footer {
+        position: relative;
+    }
+
+    header {
+        position: relative;
+        margin: 4% 0 0 2%;
+    }
+}
+
+
+
+/*==================================================
+====================================================
+====================================================
+
+-------------- Responsive mobile -----------------
+
+====================================================
+====================================================
+==================================================*/
+
+@media only screen and (max-width: 600px) {
+
+    main {
+        width: 90%;
+        /*set this later*/
+        margin-left: 5%;
+    }
+
+    footer {
+        position: relative;
+    }
+
+    header {
+        position: relative;
+        margin: 4% 0 0 2%;
+    }
+}
